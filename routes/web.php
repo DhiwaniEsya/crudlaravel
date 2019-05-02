@@ -11,5 +11,6 @@
 |
 */
 
-Route::resource('book','BookController');
-Route::post('/book/create','BookController@store');
+Route::resource('buku', 'EcaController');
+Route::get('/', 'EcaController@home');
+Route::post('/buku/create','EcaController@store');
